@@ -217,6 +217,7 @@ For production, the app can be scaled by:
 ---
 
 ## 📸 Screenshots
+<<<<<<< HEAD
 Below are step-by-step screenshots to help you understand the app flow. Place your images in the `screenshots/` folder at the root of the project and update the filenames as needed.
 
 ### 1️⃣ Home Page
@@ -242,6 +243,9 @@ Below are step-by-step screenshots to help you understand the app flow. Place yo
 ### 6️⃣ Edit/Delete Task
 > Tasks can be edited or deleted directly from the dashboard.
 ![Edit Task](screenshots/edit-task.png)
+=======
+(Add screenshots of Login, Signup, Dashboard here)
+>>>>>>> 3b877dfb21f3c8138d9b4c8e25b0f5bd079e5dbf
 
 ## 🙌 Author
 
