@@ -161,7 +161,6 @@ Place images inside the `screenshot/` folder.
 
 ### 3️⃣ Task List
 ![Task List](screenshot/task2.png)
-![Task List](screenshot/task.png)
 
 ### 4️⃣ Create Task
 ![ Create Task ](screenshot/user3.png)
@@ -169,7 +168,7 @@ Place images inside the `screenshot/` folder.
 ![Create Task](screenshot/task2.png)
 
 ### 5️⃣ Edit Task
-![Edit Task](screenshot/user5.png)
+![Edit Task ](screenshot/task.png)
 
 ### 6️⃣ User Profile
 ![User Profile](screenshot/user8.png)
