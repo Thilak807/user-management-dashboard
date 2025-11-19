@@ -160,14 +160,14 @@ Place images inside the `screenshot/` folder.
 ![Dashboard](screenshot/user2.png)
 
 ### 3️⃣ Task List
-![Task List](screenshot/user3.png)
+![Task List](screenshot/task2.png)
 ![Task List](screenshot/task.png)
 
 ### 4️⃣ Create Task
-![Create Task](screenshot/user4.png)
-![Create Task](screenshot/task1.png)
+![ Create Task ](screenshot/user3.png)
+
 ![Create Task](screenshot/task2.png)
-![Create Task](screenshot/task3.png)
+
 ### 5️⃣ Edit Task
 ![Edit Task](screenshot/user5.png)
 
