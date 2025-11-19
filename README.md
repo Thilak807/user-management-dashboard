@@ -1,18 +1,3 @@
-## Fullstack Task Manager
-
-Mini full-stack web app that demonstrates a production-style workflow: JWT auth, dashboard UI, and task CRUD.
-
-### Tech stack
-- **Frontend:** React 19, Vite, React Router, React Query, Tailwind CSS, Zustand
-- **Backend:** Node.js, Express 5, MongoDB (Mongoose), JWT, bcrypt
-- **Tooling:** Postman collection for APIs, log file via Morgan, npm scripts for dev/build
-
-### Getting started
-1. Clone the repo & install dependencies
-   ```bash
-   cd backend && npm install
-   cd ../frontend && npm install
-   ```
 # 🚀 Fullstack Authentication Dashboard
 
 A scalable full-stack web application built with **React (Vite) + Node.js + Express + MongoDB**, featuring secure authentication, protected routes, and a CRUD-enabled dashboard.
@@ -73,7 +58,7 @@ d:\user-management-dashboard\
 │   │   ├── pages/
 │   │   ├── hooks/
 │   │   ├── services/
-│   │   ├── shared/
+│     │   ├── shared/
 │   │   ├── store/
 │   │   ├── App.jsx
 │   │   ├── main.jsx
@@ -119,66 +104,25 @@ d:\user-management-dashboard\
 
 ### ✔ Dashboard
 - Display user profile  
-- CRUD operations (Create, Read, Update, Delete tasks/notes)  
-- Search & filter items  
-- Fully responsive layout  
-
-### ✔ Backend APIs
-- `POST /api/auth/signup`
-- `POST /api/auth/login`
-- `GET /api/profile` (Protected)
-- `GET /api/tasks`  
-- `POST /api/tasks`  
-- `PUT /api/tasks/:id`  
-- `DELETE /api/tasks/:id`  
+- CRUD operations  
+- Search & filter  
+- Fully responsive  
 
 ---
 
 ## ⚙️ How to Run the Project
 
-### **1️⃣ Clone this repository**
-```bash
-git clone <your-repo-url>
-cd d:/user-management-dashboard
-```
-
----
-
-## **2️⃣ Setup Backend**
-
+### **Backend**
 ```bash
 cd backend
 npm install
-```
-
-Create a `.env` file:
-```
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-PORT=5000
-```
-
-Run backend:
-```bash
 npm start
 ```
 
----
-
-## **3️⃣ Setup Frontend**
-
+### **Frontend**
 ```bash
 cd frontend
 npm install
-```
-
-Create `.env`:
-```
-VITE_API_URL=http://localhost:5000
-```
-
-Run frontend:
-```bash
 npm run dev
 ```
 
@@ -186,72 +130,55 @@ npm run dev
 
 ## 📬 API Documentation
 
-Import the Postman collection from:
-
+Import from:
 ```
 postman/api_collection.json
 ```
-
-It contains:
-- Signup API  
-- Login API  
-- Profile API  
-- CRUD APIs  
 
 ---
 
 ## 📈 Scalability Notes
 
-For production, the app can be scaled by:
-
-- Moving environment variables to secure vault  
-- Adding refresh tokens  
-- Deploying:  
-   - Frontend → Vercel  
-   - Backend → Render / Railway  
-   - Database → MongoDB Atlas  
-- Adding role-based access control  
-- Using Redis caching for performance  
-- Implementing load balancing and microservices (future)
+- JWT refresh token system  
+- Deploy to Vercel + Render  
+- MongoDB Atlas  
+- RBAC roles  
+- Redis caching  
+- Load balancers & microservices (future)
 
 ---
 
-## 📸 Screenshots
-<<<<<<< HEAD
-Below are step-by-step screenshots to help you understand the app flow. Place your images in the `screenshots/` folder at the root of the project and update the filenames as needed.
+# 📸 Screenshots
 
-### 1️⃣ Home Page
-> The landing page with options to log in or sign up.
-![Home Page](screenshots/home.png)
+Below are step-by-step screenshots of the app.  
+Place images inside the `screenshot/` folder.
 
-### 2️⃣ Signup Page
-> New users can create an account securely.
-![Signup Page](screenshots/signup.png)
+### 1️⃣ Home / Login Page
+![Login Page](screenshot/user1.png)
 
-### 3️⃣ Login Page
-> Existing users can log in with their credentials.
-![Login Page](screenshots/login.png)
+### 2️⃣ Dashboard
+![Dashboard](screenshot/user2.png)
 
-### 4️⃣ Dashboard
-> After login, users see their dashboard with tasks and profile info.
-![Dashboard](screenshots/dashboard.png)
+### 3️⃣ Task List
+![Task List](screenshot/user3.png)
 
-### 5️⃣ Create Task
-> Users can add new tasks using the task form.
-![Create Task](screenshots/create-task.png)
+### 4️⃣ Create Task
+![Create Task](screenshot/user4.png)
 
-### 6️⃣ Edit/Delete Task
-> Tasks can be edited or deleted directly from the dashboard.
-![Edit Task](screenshots/edit-task.png)
-=======
-(Add screenshots of Login, Signup, Dashboard here)
->>>>>>> 3b877dfb21f3c8138d9b4c8e25b0f5bd079e5dbf
+### 5️⃣ Edit Task
+![Edit Task](screenshot/user5.png)
+
+### 6️⃣ User Profile
+![User Profile](screenshot/user8.png)
+
+### 7️⃣ Logout Flow
+![Logout](screenshot/user9.png)
+
+---
 
 ## 🙌 Author
 
-**Your Name**  
+**Thilak Raj P**  
 Frontend Developer Intern Candidate  
-GitHub: [https://github.com/Thilak807/user-management-dashboard](https://github.com/Thilak807/user-management-dashboard)  
+GitHub: https://github.com/Thilak807/user-management-dashboard  
 Email: thilakrajp1234@gmail.com
-
----
