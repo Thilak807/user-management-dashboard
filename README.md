@@ -13,27 +13,241 @@ Mini full-stack web app that demonstrates a production-style workflow: JWT auth,
    cd backend && npm install
    cd ../frontend && npm install
    ```
-2. Configure environment variables (see `backend/README.md` & `frontend/README.md`)
-3. Run the platforms in separate terminals
-   ```bash
-   cd backend && npm run dev
-   cd frontend && npm run dev
-   ```
-4. Open `http://localhost:5173` and sign up to get started.
+# 🚀 Fullstack Authentication Dashboard
 
-### Project layout
+A scalable full-stack web application built with **React (Vite) + Node.js + Express + MongoDB**, featuring secure authentication, protected routes, and a CRUD-enabled dashboard.
+
+This project is created for the **Frontend Developer Intern Assignment**.
+
+---
+
+## 📌 Project Overview
+
+This application demonstrates:
+
+- Modern UI with React + TailwindCSS  
+- Secure user authentication using JWT  
+- Full frontend–backend integration  
+- CRUD operations (Tasks / Notes)  
+- Scalable folder structure for production  
+- Search & filter functionality  
+- Fully responsive UI  
+
+---
+
+## 🧰 Tech Stack
+
+### **Frontend**
+- React.js (Vite)
+- TailwindCSS
+- React Router
+- Axios
+- Zustand (Authentication store)
+- LocalStorage (Token handling)
+
+### **Backend**
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- JSON Web Tokens (JWT)
+- bcryptjs (password hashing)
+- express-validator (validation)
+- CORS middleware
+- dotenv
+
+### **Tools**
+- Postman (API Testing)
+- GitHub
+- VS Code
+
+---
+
+## 📂 Folder Structure
+
 ```
-fullstack-app/
-├── backend/    # REST API + MongoDB models
-├── frontend/   # React dashboard
-├── logs/       # Server log output
-└── postman/    # API collection
+d:\user-management-dashboard\
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── shared/
+│   │   ├── store/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── router.jsx
+│   ├── .env
+│   ├── package.json
+│   └── README.md
+│
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── utils/
+│   │   ├── validators/
+│   │   └── app.js
+│   ├── server.js
+│   ├── .env
+│   ├── package.json
+│   └── README.md
+│
+├── postman/
+│   └── api_collection.json
+│
+├── logs/
+│   └── server.log
+│
+└── README.md
 ```
 
-### Deliverables
-- ✅ Signup/login/logout with hashed passwords & JWT
-- ✅ Dashboard with profile widget + responsive CRUD experience
-- ✅ Search + filter over tasks
-- ✅ Postman collection for quick verification
-- ✅ Persistent server log
-- ✅ README + setup docs
+---
+
+## 🔐 Features
+
+### ✔ Authentication (JWT)
+- User Signup  
+- Login  
+- Logout  
+- Password hashing (bcryptjs)  
+- Protected routes  
+
+### ✔ Dashboard
+- Display user profile  
+- CRUD operations (Create, Read, Update, Delete tasks/notes)  
+- Search & filter items  
+- Fully responsive layout  
+
+### ✔ Backend APIs
+- `POST /api/auth/signup`
+- `POST /api/auth/login`
+- `GET /api/profile` (Protected)
+- `GET /api/tasks`  
+- `POST /api/tasks`  
+- `PUT /api/tasks/:id`  
+- `DELETE /api/tasks/:id`  
+
+---
+
+## ⚙️ How to Run the Project
+
+### **1️⃣ Clone this repository**
+```bash
+git clone <your-repo-url>
+cd d:/user-management-dashboard
+```
+
+---
+
+## **2️⃣ Setup Backend**
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file:
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+
+Run backend:
+```bash
+npm start
+```
+
+---
+
+## **3️⃣ Setup Frontend**
+
+```bash
+cd frontend
+npm install
+```
+
+Create `.env`:
+```
+VITE_API_URL=http://localhost:5000
+```
+
+Run frontend:
+```bash
+npm run dev
+```
+
+---
+
+## 📬 API Documentation
+
+Import the Postman collection from:
+
+```
+postman/api_collection.json
+```
+
+It contains:
+- Signup API  
+- Login API  
+- Profile API  
+- CRUD APIs  
+
+---
+
+## 📈 Scalability Notes
+
+For production, the app can be scaled by:
+
+- Moving environment variables to secure vault  
+- Adding refresh tokens  
+- Deploying:  
+   - Frontend → Vercel  
+   - Backend → Render / Railway  
+   - Database → MongoDB Atlas  
+- Adding role-based access control  
+- Using Redis caching for performance  
+- Implementing load balancing and microservices (future)
+
+---
+
+## 📸 Screenshots
+Below are step-by-step screenshots to help you understand the app flow. Place your images in the `screenshots/` folder at the root of the project and update the filenames as needed.
+
+### 1️⃣ Home Page
+> The landing page with options to log in or sign up.
+![Home Page](screenshots/home.png)
+
+### 2️⃣ Signup Page
+> New users can create an account securely.
+![Signup Page](screenshots/signup.png)
+
+### 3️⃣ Login Page
+> Existing users can log in with their credentials.
+![Login Page](screenshots/login.png)
+
+### 4️⃣ Dashboard
+> After login, users see their dashboard with tasks and profile info.
+![Dashboard](screenshots/dashboard.png)
+
+### 5️⃣ Create Task
+> Users can add new tasks using the task form.
+![Create Task](screenshots/create-task.png)
+
+### 6️⃣ Edit/Delete Task
+> Tasks can be edited or deleted directly from the dashboard.
+![Edit Task](screenshots/edit-task.png)
+
+## 🙌 Author
+
+**Your Name**  
+Frontend Developer Intern Candidate  
+GitHub: [https://github.com/Thilak807/user-management-dashboard](https://github.com/Thilak807/user-management-dashboard)  
+Email: thilakrajp1234@gmail.com
+
+---
